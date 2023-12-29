@@ -1,0 +1,137 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeLensFontFamily": "arial",
+  //"editor.fontWeight": "normal",
+  "editor.fontVariations": false,
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  "editor.linkedEditing": true,
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "Theme",
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  //"workbench.colorCustomizations": { "editor.background": "#02174700" },
+  "editor.codeActionsOnSave": {},
+
+  "editor.tokenColorCustomizations": {
+    //"variables": "#ffd900",
+    //"keywords": "#ff0000",
+    "strings": "#75bc75",
+    "comments": "#7faefa",
+    //functions in comment
+    //"functions": "#ff1500",
+    //"numbers": "#FF0000",
+    "textMateRules": [
+      {
+        "scope": [
+          // the following elements will be in italic
+          "comment",
+          "storage.modifier", // static keyword
+          "storage.type.php", // typehints in methods keyword
+          "keyword.other.new.php", // new
+          "entity.other.attribute-name", // html attributes
+          "fenced_code.block.language.markdown", // markdown language modifier
+          "keyword", //import, export, return…
+          "storage.modifier", //static keyword
+          "storage.type", //class keyword
+          "keyword.control",
+          "constant.language",
+          "entity.other.attribute-name",
+          "entity.name.method",
+          "keyword.control.import.ts",
+          "keyword.control.import.tsx",
+          "keyword.control.import.js",
+          "keyword.control.flow.js",
+          "keyword.control.from.js",
+          "keyword.control.from.ts",
+          "keyword.control.from.tsx"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be displayed in bold
+          "entity.name.type.class" // class names
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be displayed in bold and italic
+          "entity.name.section.markdown" // markdown headlines
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be excluded from italics
+          //   (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "comment.block",
+          "entity.other.attribute-name.class.css"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.emptySelectionClipboard": false,
+  "editor.largeFileOptimizations": false,
+  "window.zoomLevel": -1,
+  "editor.minimap.enabled": false,
+  "workbench.colorCustomizations": {},
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "css.hover.references": false,
+  "html.hover.references": false,
+  "scss.hover.references": false,
+  "less.hover.references": false,
+  "less.hover.documentation": false,
+  "scss.hover.documentation": false,
+  "html.hover.documentation": false,
+  "npm.fetchOnlinePackageInfo": false,
+  "npm.scriptHover": false,
+  "css.hover.documentation": false,
+  // "editor.quickSuggestions": {
+  //   "other": "inline"
+  // },
+  "prettier.bracketSpacing": false,
+  "prettier.embeddedLanguageFormatting": "off",
+  "prettier.singleAttributePerLine": true,
+  "prettier.singleQuote": true,
+  "prettier.bracketSameLine": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.quoteProps": "preserve",
+  "editor.suggest.snippetsPreventQuickSuggestions": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "emmet.useInlineCompletions": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "json.schemas": [
+    
+  ]
+}
+
+//  "editor.tokenColorCustomizations": {
+//  "variables": "#e9a7ff",
+//"keywords": "#fff786",
+//    "strings": "#40ad73",
+//   "comments": "#82b8ff",
+//   "functions": "#eaa3a3",
+//   "numbers": "#f7e3e3",
