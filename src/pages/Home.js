@@ -7,7 +7,6 @@ import Contact from '../Components/ContactHome';
 function Home() {
   return (
     <div>
-      Hello this is my homepage
       <Hero />
       <Intro />
       <Projects />
