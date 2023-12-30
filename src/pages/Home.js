@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from '../Components/Hero';
 import Intro from '../Components/Intro';
+import Projects from '../Components/Projects';
+import Contact from '../Components/ContactHome';
 
 function Home() {
   return (
@@ -8,6 +10,8 @@ function Home() {
       Hello this is my homepage
       <Hero />
       <Intro />
+      <Projects />
+      <Contact />
     </div>
   );
 }
