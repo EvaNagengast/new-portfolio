@@ -1,4 +1,5 @@
 import React from 'react';
+import './contact.module.css';
 import pdf from '../media/spam.jpg';
 
 function Contact() {

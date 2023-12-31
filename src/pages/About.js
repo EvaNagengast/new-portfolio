@@ -1,4 +1,5 @@
 import React from 'react';
+import './about.module.css';
 import image from '../media/evanagengast.png';
 
 function About() {

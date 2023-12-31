@@ -1,3 +1,4 @@
-h1{
-    color: beige;
+:root {
+  ---baselight: #d0cdb9;
+  ---basedark: #211e17;
 }
