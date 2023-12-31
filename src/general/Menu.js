@@ -1,10 +1,11 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import styles from "./menu.module.css"
 
-function MobileNav() {
+function Menu() {
   return (
     <div>
-      <ul>
+      <ul className={styles.menu}>
         <li>
           <NavLink to='/'>Home</NavLink>
         </li>
@@ -22,4 +23,4 @@ function MobileNav() {
   );
 }
 
-export default MobileNav;
+export default Menu;

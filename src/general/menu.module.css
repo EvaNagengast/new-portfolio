@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(---basedark);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: white;
+}

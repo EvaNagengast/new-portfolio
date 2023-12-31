@@ -1,11 +1,13 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import styles from './navigation.module.css';
 import Logo from '../media/spam.jpg';
-import MobileMenu from '../general/MobileNav';
+import MobileMenu from './MobileNav';
+import Menu from './Menu';
 
-function Navbar() {
+function Navigation() {
   return (
-    <nav>
+    <nav className={styles.navigation}>
       <div>
         <MobileMenu />
       </div>
@@ -15,21 +17,8 @@ function Navbar() {
           alt='Logo'
         />
       </NavLink>
-      <ul>
-        <li>
-          <NavLink to='/'>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to='about'>About</NavLink>
-        </li>
-        <li>
-          <NavLink to='contact'>Contact</NavLink>
-        </li>
-        <li>
-          <NavLink to='projects'>Projects</NavLink>
-        </li>
-      </ul>
+      <Menu />
     </nav>
   );
 }
-export default Navbar;
+export default Navigation;
