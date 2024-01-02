@@ -1,0 +1,94 @@
+.mobileMenuButton {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.mobileMenuButton div {
+  position: relative;
+  width: 1.7rem;
+  height: 0.25rem;
+  margin: 0.3rem;
+  border-radius: 2px;
+  background-color: var(---basedark);
+  transition: all 0.4s linear;
+  transform-origin: 1px;
+  z-index: 20;
+}
+
+/* hamburger button */
+
+.mobileMenuTopOpen {
+  transform: rotate(46deg);
+}
+
+.mobileMenuMidOpen {
+  opacity: 0;
+}
+
+.mobileMenuBottomOpen {
+  transform: rotate(-44deg);
+}
+
+.mobileMenuTopClosed,
+.mobileMenuBottomClosed {
+  transform: rotate(0);
+}
+
+.mobileMenuMidClosed {
+  opacity: 1;
+}
+
+/* Mobile Menu */
+
+.mobileMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.mobileMenu li {
+  margin-bottom: 1rem;
+}
+
+.mobileNavMenu a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(---basedark);
+  transition: color 0.3s ease-in-out;
+}
+
+.mobileMenu .mobileNav,
+.mobileMenu .mobileNavClosed {
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  width: 35%;
+  padding: 5rem 1rem 2.5rem 1rem;
+  border-radius: 0 2px 2px 0;
+  background-color: var(---baselight);
+}
+
+.mobileMenu .mobileNav {
+  transform: translateX(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+.mobileMenu .mobileNavClosed {
+  transform: translateX(-120%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.mobileNavLink {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.mobileMenu .active {
+  color: var(---light);
+}

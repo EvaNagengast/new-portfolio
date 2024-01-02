@@ -21,3 +21,7 @@
 .menu a:hover {
   color: var(---light);
 }
+
+.active {
+  color: var(---light) !important;
+}
