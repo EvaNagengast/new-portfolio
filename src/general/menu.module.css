@@ -12,12 +12,12 @@
 
 .menu a {
   text-decoration: none;
-  color: var(---basedark);
+  color: var(---dark);
   font-weight: bold;
   font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
 }
 
 .menu a:hover {
-  color: white;
+  color: var(---light);
 }

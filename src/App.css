@@ -1,4 +1,6 @@
 :root {
+  ---light:#f5f4eb;
   ---baselight: #d0cdb9;
-  ---basedark: #211e17;
+  ---basedark: #231c09;
+  ---dark: #211e17;
 }
