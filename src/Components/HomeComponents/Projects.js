@@ -1,5 +1,5 @@
 import React from 'react';
-import ShowProjects from '../Subs/ShowProjects';
+import ShowProjects from '../../Subs/ShowProjects';
 
 function Projects() {
   return (

@@ -1,6 +1,9 @@
 :root {
-  ---light:#f5f4eb;
+  ---light: #f5f4eb;
   ---baselight: #d0cdb9;
   ---basedark: #231c09;
   ---dark: #211e17;
+  ---highlight: #475dda;
+  ---basefont: Verdana, sans-serif;
+  ---headlinefont: Courier, monospace;
 }
