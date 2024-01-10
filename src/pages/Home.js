@@ -10,9 +10,9 @@ function Home() {
   return (
     <div className={styles.home}>
       <Hero />
-      <Intro />
-      <Projects />
-      <Contact />
+      {/* <Intro /> */}
+      {/* <Projects /> */}
+      {/* <Contact /> */}
     </div>
   );
 }

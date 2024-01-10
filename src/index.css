@@ -1,7 +1,7 @@
 body {
   max-width: 100%;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   background: var(---light);
   background-image: linear-gradient(var(---lightdark) 1px, transparent 0),

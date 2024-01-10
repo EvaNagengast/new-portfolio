@@ -5,16 +5,19 @@ function Hero() {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
-    console.log("fadein?");
     setFadeIn(true);
   }, []);
 
   return (
-    <div>
-      <h1 className={`${styles.noHeadline} ${fadeIn ? styles.headline : ''}`}>
-        Eva Nagengast
-      </h1>
-      <button>Let's connect</button> <button>Explore my page</button>
+    <div className={styles.hero}>
+      <h1 className={styles.headline}>Eva Nagengast</h1>
+      <div className={`${styles.noSub} ${fadeIn ? styles.sub : ''}`}>
+        <h2 className={styles.subtitle}>
+          Front End Development, Creative, DIY
+        </h2>
+        <button className={styles.heroButton}>Let's connect</button>
+        <button className={styles.heroButton}>Explore my page</button>
+      </div>
     </div>
   );
 }
