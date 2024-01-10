@@ -1,5 +1,11 @@
 body {
+  max-width: 100%;
   margin: 0;
   font-family: sans-serif;
   overflow-x: hidden;
+  background: var(---light);
+  background-image: linear-gradient(var(---lightdark) 1px, transparent 0),
+    linear-gradient(90deg, var(---lightdark) 1px, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0;
 }

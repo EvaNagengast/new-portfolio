@@ -1,12 +1,13 @@
-
 .noHeadline {
+  margin: 30rem 0;
   opacity: 0;
 }
 .headline {
+  margin: 3rem 0;
   font-size: 120px;
   font-weight: 900;
   font-family: var(---headlinefont);
   color: var(---basedark);
-  opacity: 1 ;
+  opacity: 1;
   transition: opacity 1.5s ease-in-out 0.4s;
 }
