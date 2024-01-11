@@ -1,21 +1,23 @@
 import React from 'react';
+import styles from './projects.module.css';
 import ShowProjects from '../../SubComponents/ShowProjects';
 
 function Projects() {
   return (
-    <div>
+    <div className={styles.projects}>
       <h1>Projects</h1>
-      <p>
-        Browse through some assorted projects I created, or find all of my
-        projects
-      </p>{' '}
-      <a
-        href='/'
-        target='_blank'
-        rel='noreferrer'
-        alt='Find a portfolio of all my Projects'>
-        here
-      </a>
+      <p className={styles.projectsIntro}>
+        Browse through some assorted projects I created, or{' '}
+        <a
+          href='/'
+          target='_blank'
+          rel='noreferrer'
+          alt='Find a portfolio of all my Projects'
+          className={styles.portfolioLink}>
+          find all of my projects <u>here</u>
+        </a>
+      </p>
+
       <ShowProjects />
     </div>
   );

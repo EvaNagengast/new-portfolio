@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './codesnippet.module.css';
-import pdf from '../media/spam.jpg';
 
 function CodeSnippet() {
   return (

@@ -11,7 +11,7 @@ function Home() {
     <div className={styles.home}>
       <Hero />
       <Intro />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Contact /> */}
     </div>
   );
