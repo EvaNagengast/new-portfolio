@@ -15,9 +15,11 @@
 .window {
   padding: 0.4rem 0.7rem;
   background-color: var(---light);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
 }
 .window p {
-  margin: 0.3rem;
+  margin: 0.8rem 0.2rem;
   background-color: var(---light);
 }
 .window a {
@@ -38,30 +40,15 @@
 .window a {
   color: var(---basedark);
 }
+.button {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto 1rem;
+  padding: 0.5rem 1rem;
+  border: 3px outset #5994c5;
+  background-color: var(---lightdark);
+}
+.button:hover {
+  background-color: #99c6ea;
+}
 /*  */
-.Aboutsection .codeimagetwo {
-  margin: -53px 0 0 246px;
-  padding: 40px 0 0 20px;
-  height: 274px;
-  width: 468px;
-  color: #155b95;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 34px;
-  letter-spacing: 1.4px;
-}
-.Aboutsection .codeimage,
-.Aboutsection .codeimagetwo {
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-.Aboutsection .colorone {
-  color: var(---basedark);
-}
-.Aboutsection .colortwo {
-  color: var(---baselight);
-}
-.Aboutsection .colorthree {
-  color: var(---secondary);
-}

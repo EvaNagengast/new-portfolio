@@ -21,20 +21,20 @@ function CodeSnippet() {
           <span className={styles.colorThree}>"HTML"</span>
           <span className={styles.colorTwo}>, </span>
           <span className={styles.colorThree}>"CSS"</span>
-          <span className={styles.colorTwo}>,</span>{' '}
+          <span className={styles.colorTwo}>,</span>
           <span className={styles.colorThree}> "JavaScript"</span>
           <span className={styles.colorTwo}>,</span>
           <span className={styles.colorThree}> "React.js"</span>
-          <span className={styles.colorTwo}>,</span>{' '}
+          <span className={styles.colorTwo}>,</span>
           <span className={styles.colorThree}> "Next.js"</span>
           <span className={styles.colorTwo}>,</span>
           <span className={styles.colorThree}> "GitHub"</span>
-          <span className={styles.colorTwo}>]</span>
+          <span className={styles.colorTwo}>; ]</span>
         </p>
         <p id='likes'>
-          <span className={styles.colorOne}> .likes </span>
+          <span className={styles.colorOne}> .interests </span>
           <span className={styles.colorTwo}>{'{ '}</span>
-          <span className={styles.colorThree}> hobbies</span>
+          <span className={styles.colorThree}> likes</span>
           <span className={styles.colorTwo}>:</span>
           <span className={styles.colorThree}> Coding</span>
           <span className={styles.colorTwo}>,</span>
@@ -42,10 +42,9 @@ function CodeSnippet() {
           <span className={styles.colorTwo}>,</span>
           <span className={styles.colorThree}> Environment</span>
           <span className={styles.colorTwo}>,</span>
-          <span className={styles.colorThree}> DIY</span>
+          <span className={styles.colorThree}> Crafts</span>
           <span className={styles.colorTwo}>{'; }'}</span>
         </p>
-
         <p id='contact'>
           <span className={styles.colorOne}> contact.onClick= </span>
           <a
@@ -72,6 +71,14 @@ function CodeSnippet() {
             "GitHub"
           </a>
         </p>
+        <a
+          href='/'
+          target='_blank'
+          rel='noreferrer'
+          alt='Find out more about Eva Nagengast'
+          className={styles.button}>
+          find out more about me
+        </a>
       </div>
     </div>
   );

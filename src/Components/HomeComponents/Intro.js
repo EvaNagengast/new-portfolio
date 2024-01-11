@@ -13,26 +13,20 @@ function Intro() {
       </div>
 
       <div>
-        <p>
+        <p className={styles.description}>
           Hi, I'm Eva! I love designing and developing beautiful websites and
           bring my passion to DIY projects, community engagement and creative
           ventures.
+          <br />
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Find Eva Nagengasts Projects'>
+            Find all of my recent projects <u>here</u>
+          </a>
         </p>
-        <a
-          href='/'
-          target='_blank'
-          rel='noreferrer'
-          alt='Find out more about Eva Nagengast'>
-          find out more about me
-        </a>{' '}
-        or
-        <a
-          href='/'
-          target='_blank'
-          rel='noreferrer'
-          alt='Find Eva Nagengasts Projects'>
-          have a look at my projects
-        </a>
+
         <CodeSnippet />
       </div>
     </div>
