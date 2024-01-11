@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className={styles.home}>
       <Hero />
-      {/* <Intro /> */}
+      <Intro />
       {/* <Projects /> */}
       {/* <Contact /> */}
     </div>

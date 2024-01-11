@@ -1,0 +1,67 @@
+.codeSnippet {
+  margin: 0 -2rem;
+  border: 2px solid black;
+  filter: drop-shadow(5px 5px 1px #4444);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menuBar {
+  background-color: var(---baselight);
+  padding: 0.1rem 0.5rem 0.2rem;
+  border-bottom: 2px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: end;
+  color: var(---light);
+}
+.window {
+  padding: 0.4rem 0.7rem;
+  background-color: var(---light);
+}
+.window p {
+  margin: 0.3rem;
+  background-color: var(---light);
+}
+.window a {
+  text-decoration: none;
+  color: var(---basedark);
+}
+
+.colorOne {
+  color: var(---lightdark);
+}
+
+.colorTwo,
+.window a:hover {
+  color: var(---baselight);
+}
+
+.colorThree,
+.window a {
+  color: var(---basedark);
+}
+/*  */
+.Aboutsection .codeimagetwo {
+  margin: -53px 0 0 246px;
+  padding: 40px 0 0 20px;
+  height: 274px;
+  width: 468px;
+  color: #155b95;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 1.4px;
+}
+.Aboutsection .codeimage,
+.Aboutsection .codeimagetwo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.Aboutsection .colorone {
+  color: var(---basedark);
+}
+.Aboutsection .colortwo {
+  color: var(---baselight);
+}
+.Aboutsection .colorthree {
+  color: var(---secondary);
+}

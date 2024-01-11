@@ -25,18 +25,21 @@
   font-size: 1.6rem;
   color: var(---basedark);
 }
+/* buttons */
 .heroButton {
   display: inline-block;
   margin: 1rem 1rem;
   padding: 0.8rem 1.3rem;
   box-shadow: 2px 1px 5px 1px #0c49762f;
-  font-weight: 100;
-  font-size: 1rem;
   border: 1px solid var(---lightdark);
   border-radius: 4px;
   background-color: var(---light);
+  font-weight: 00;
+  font-size: 1rem;
   color: var(---basedark);
+  letter-spacing: 2px;
   text-transform: uppercase;
+  font-family: Geneva, Verdana, sans-serif;
 }
 .heroButton:hover {
   border: none;
