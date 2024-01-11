@@ -1,0 +1,25 @@
+.projects {
+  margin: 1rem 1rem;
+  padding: 1rem 5rem 5rem 0;
+}
+
+.projects h1 {
+  margin: 1rem;
+  text-align: center;
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: var(---basedark);
+  letter-spacing: -2.5px;
+}
+.projects a {
+  color: inherit;
+  text-decoration: none;
+}
+.projects a :hover {
+  color: var(---baselight);
+}
+.projectsIntro {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
