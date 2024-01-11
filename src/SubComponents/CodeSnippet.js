@@ -5,7 +5,10 @@ import pdf from '../media/spam.jpg';
 function CodeSnippet() {
   return (
     <div className={styles.codeSnippet}>
-      <div className={styles.menuBar}> _ &#63522; X</div>
+      <div className={styles.menuBar}>
+        <span>about Eva</span>
+        <span className={styles.windowButtons}>_  &#63522;  X</span>
+      </div>
       <div className={styles.window}>
         <p id='location'>
           <span className={styles.colorOne}>.location </span>

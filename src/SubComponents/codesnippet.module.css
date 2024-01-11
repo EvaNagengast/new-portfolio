@@ -2,14 +2,15 @@
   margin: 0 -2rem;
   border: 2px solid black;
   filter: drop-shadow(5px 5px 1px #4444);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .menuBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
   background-color: var(---baselight);
-  padding: 0.1rem 0.5rem 0.2rem;
+  padding: 0.5rem 0.8rem 0.5rem 0.6rem;
   border-bottom: 2px solid black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: end;
+
   color: var(---light);
 }
 .window {
@@ -26,7 +27,10 @@
   text-decoration: none;
   color: var(---basedark);
 }
-
+.windowButtons {
+  text-align: end;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .colorOne {
   color: var(---lightdark);
 }
