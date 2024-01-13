@@ -9,6 +9,7 @@ function Intro() {
         <img
           src={profileImage}
           className={styles.profileImage}
+          alt="Eva Nagengast Profile"
         />
       </div>
 

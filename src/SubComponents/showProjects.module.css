@@ -1,0 +1,75 @@
+.showProjects {
+  width: 200px;
+  height: max-content;
+}
+.box {
+  z-index: 90;
+}
+.box2 {
+  top: -20rem;
+  left: 10rem;
+  margin-bottom: -20rem;
+  z-index: 80;
+}
+.box3 {
+  top: -20rem;
+  left: 20rem;
+  margin-bottom: -20rem;
+  z-index: 70;
+}
+.box4 {
+  top: -20rem;
+  left: 30rem;
+  margin-bottom: -20rem;
+  z-index: 60;
+}
+.box,
+.box2,
+.box3,
+.box4 {
+  position: relative;
+  padding-left: 10rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 50rem;
+  border-radius: 10rem;
+  height: 20rem;
+}
+.boxClosed,
+.boxClosed2,
+.boxClosed3,
+.boxClosed4 {
+  left: -300%;
+  transition: all 1s ease-in-out;
+  background: none;
+  color: transparent;
+}
+.boxClosed {
+  left: -300%;
+}
+.boxClosed2 {
+  left: -200%;
+}
+.boxClosed3 {
+  left: -100%;
+}
+.boxClosed4 {
+  left: -0%;
+}
+.boxOpen,
+.boxOpen2,
+.boxOpen3,
+.boxOpen4 {
+  left: 90%;
+  background-color: var(---basedark);
+  color: var(---light);
+  transition: all 1s ease-in-out;
+  z-index: 100;
+}
+
+.projectImage {
+  height: 20rem;
+  border-radius: 50%;
+  outline: 5px solid var(---baselight);
+  outline-offset: -0.2rem;
+}

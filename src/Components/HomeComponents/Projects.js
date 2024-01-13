@@ -7,14 +7,16 @@ function Projects() {
     <div className={styles.projects}>
       <h1>Projects</h1>
       <p className={styles.projectsIntro}>
-        Browse through some assorted projects I created, or{' '}
+        Browse through some assorted projects I created by clicking the images.
+      </p>
+      <p className={styles.projectsIntro}>
         <a
           href='/'
           target='_blank'
           rel='noreferrer'
           alt='Find a portfolio of all my Projects'
           className={styles.portfolioLink}>
-          find all of my projects <u>here</u>
+          Find all of my projects <u>here</u>
         </a>
       </p>
 

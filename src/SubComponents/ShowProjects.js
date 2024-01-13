@@ -1,91 +1,190 @@
-import React from 'react';
-import project from '../media/project.png';
+import React, {useState} from 'react';
+import styles from './showProjects.module.css';
+// import project from '../media/project.png';
+import projectImage1 from '../media/trwround.png';
+import projectImage2 from '../media/jcround.png';
+import projectImage3 from '../media/101round.png';
+import projectImage4 from '../media/lmjround.png';
 
 function ShowProjects() {
+  const [boxPosition, setBoxPosition] = useState(styles.boxClosed);
+  const [boxPosition2, setBoxPosition2] = useState(styles.boxClosed2);
+  const [boxPosition3, setBoxPosition3] = useState(styles.boxClosed3);
+  const [boxPosition4, setBoxPosition4] = useState(styles.boxClosed4);
+
+  const handleClick = () => {
+    const boxVisible =
+      boxPosition === styles.boxClosed ? styles.boxOpen : styles.boxClosed;
+    setBoxPosition(boxVisible);
+  };
+  const handleClick2 = () => {
+    const boxVisible2 =
+      boxPosition2 === styles.boxClosed2 ? styles.boxOpen2 : styles.boxClosed2;
+    setBoxPosition2(boxVisible2);
+  };
+  const handleClick3 = () => {
+    const boxVisible3 =
+      boxPosition3 === styles.boxClosed3 ? styles.boxOpen3 : styles.boxClosed3;
+    setBoxPosition3(boxVisible3);
+  };
+  const handleClick4 = () => {
+    const boxVisible4 =
+      boxPosition4 === styles.boxClosed4 ? styles.boxOpen4 : styles.boxClosed4;
+    setBoxPosition4(boxVisible4);
+  };
+
   return (
-    <div>
-      <h3> Author Website and Portfolio </h3>
-      <p>
-        This Website was built to showcase the newest work of the author Jane
-        Corry and to offer a unique glimpse into the author's world. To catch
-        the eye of the user, the landing page shows a gloomy scene with animated
-        flashing windows. The website also features a dynamic slideshow and a
-        typewriter animation.
-      </p>
-      <p>
-        Built with HTML, CSS, JavaScript, React, Embeds, Bootstrap, npm
-        Libraries
-      </p>
-      <a
-        href='/'
-        target='_blank'
-        rel='noreferrer'
-        alt='Find a portfolio of all my Projects'>
-        GO TO PAGE
-      </a>
-      <img
-        src={project}
-        alt='project example'
-      />
-      <h3> London Music Journey </h3>
-      <p>
-        Explore London through a musical journey! This web page combines
-        embedded songs and maps, with grid layouts and responsive media queries.
-        I illustrated the London Underground-themed icons to enhance the user
-        experience and to spawn a connection with this beautiful city.{' '}
-      </p>
-      <p>Built with HTML, CSS, JavaScript, Embeds & Bootstrap </p>
-      <a
-        href='/'
-        target='_blank'
-        rel='noreferrer'
-        alt='Find a portfolio of all my Projects'>
-        GO TO PAGE
-      </a>
-      <img
-        src={project}
-        alt='project example'
-      />
-      <h3>Dictionary</h3>
-      <p>
-        Built using React.js with the help of npm libraries and enhanced with
-        APIs, this page offers word definitions and related images for a search
-        term. It becomes fun and engaging as the animated play button talks to
-        the user. Behind the scenes, I employed loops and React's mapping
-        capabilities to fetch and present the data.
-      </p>
-      <p>Built with HTML, CSS, React.js, APIs & npm Libraries</p>
-      <a
-        href='/'
-        target='_blank'
-        rel='noreferrer'
-        alt='Find a portfolio of all my Projects'>
-        GO TO PAGE
-      </a>
-      <img
-        src={project}
-        alt='project example'
-      />
-      <h3>Pigeon Showcase </h3>
-      <p>
-        From a concept to web reality, this Pigeon Showcase was built using
-        Bootstrap, media queries, and flexbox for a responsive and beautiful
-        website. Originally conceived as a model showcase, I carefully and
-        accurately translated the Figma design into a unique appreciation of
-        pigeons, all while paying close attention to SEO.{' '}
-      </p>
-      <p>Built with HTML, CSS, JavaScript & Figma</p>
-      <a
-        href='/'
-        target='_blank'
-        rel='noreferrer'
-        alt='Find a portfolio of all my Projects'>
-        GO TO PAGE
-      </a>
-      <img
-        src={project}
-        alt='project example'
-      />
+    <div className={styles.showProjects}>
+      {/* Project 1 */}
+
+      <div
+        className={`${boxPosition} ${styles.box}`}
+        onClick={handleClick}>
+        <div>
+          <h3> Tech Risers Women</h3>
+          <p>
+            Tech Risers Women is an intiatve to support women in tech. I
+            received the basic information, colour-scheme and pillars. I
+            designed the website to showcase the mission and vision of tech
+            risers women. For the design I chose to use images of some of the
+            most important women in tech to show how important women are in this
+            field.
+          </p>
+          <p>Built with HTML, CSS, JavaScript, React</p>{' '}
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Website of Tech Risers Women'>
+            View Page
+          </a>{' '}
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Find the GitHub Repository of Tech Risers Women'>
+            GithHub
+          </a>
+        </div>
+        <img
+          src={projectImage1}
+          alt='tech risers women project. Website for initiative to help women in tech'
+          className={styles.projectImage}
+          onClick={handleClick}
+        />
+      </div>
+      {/* Project 2 */}
+
+      <div
+        className={`${boxPosition2} ${styles.box2}`}
+        onClick={handleClick2}>
+        <div>
+          <h3> Tech Risers Women</h3>
+          <p>
+            Tech Risers Women is an intiatve to support women in tech. I
+            received the basic information, colour-scheme and pillars. I
+            designed the website to showcase the mission and vision of tech
+            risers women. For the design I chose to use images of some of the
+            most important women in tech to show how important women are in this
+            field.
+          </p>
+          <p>Built with HTML, CSS, JavaScript, React</p>
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Website of Tech Risers Women'>
+            View Page
+          </a>
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Find the GitHub Repository of Tech Risers Women'>
+            GithHub
+          </a>
+        </div>
+        <img
+          src={projectImage2}
+          alt='tech risers women project. Website for initiative to help women in tech'
+          className={styles.projectImage}
+          onClick={handleClick2}
+        />
+      </div>
+      {/* Project 3*/}
+      <div
+        className={`${boxPosition3} ${styles.box3}`}
+        onClick={handleClick3}>
+        <div>
+          <h3> Tech Risers Women</h3>
+          <p>
+            Tech Risers Women is an intiatve to support women in tech. I
+            received the basic information, colour-scheme and pillars. I
+            designed the website to showcase the mission and vision of tech
+            risers women. For the design I chose to use images of some of the
+            most important women in tech to show how important women are in this
+            field.
+          </p>
+          <p>Built with HTML, CSS, JavaScript, React</p>
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Website of Tech Risers Women'>
+            View Page
+          </a>
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Find the GitHub Repository of Tech Risers Women'>
+            GithHub
+          </a>
+        </div>
+        <img
+          src={projectImage3}
+          alt='tech risers women project. Website for initiative to help women in tech'
+          className={styles.projectImage}
+          onClick={handleClick3}
+        />
+      </div>
+      {/* Project 4*/}
+      <div
+        className={`${boxPosition4} ${styles.box4}`}
+        onClick={handleClick4}>
+        <div>
+          <h3> Tech Risers Women</h3>
+          <p>
+            Tech Risers Women is an intiatve to support women in tech. I
+            received the basic information, colour-scheme and pillars. I
+            designed the website to showcase the mission and vision of tech
+            risers women. For the design I chose to use images of some of the
+            most important women in tech to show how important women are in this
+            field.
+          </p>
+          <p>Built with HTML, CSS, JavaScript, React</p>
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Website of Tech Risers Women'>
+            View Page
+          </a>
+          <a
+            href='/'
+            target='_blank'
+            rel='noreferrer'
+            alt='Find the GitHub Repository of Tech Risers Women'>
+            GithHub
+          </a>
+        </div>
+        <img
+          src={projectImage4}
+          alt='tech risers women project. Website for initiative to help women in tech'
+          className={styles.projectImage}
+          onClick={handleClick4}
+        />
+      </div>
     </div>
   );
 }
