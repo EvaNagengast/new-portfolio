@@ -6,62 +6,70 @@
   margin: 0 auto;
 }
 .project {
+  float: left;
+  position: relative;
   max-width: 19rem;
   width: calc(25% - 40px);
   height: 19rem;
   margin: 0.6rem;
-  float: left;
-  border: 0.6rem solid var(---baselight);
-  overflow: hidden;
-  position: relative;
-  text-align: center;
+  border: 0.6rem solid var(---light);
   box-shadow: 1px 1px 2px #2f0a0a;
+  text-align: center;
   cursor: default;
   background: #fff url('../media/trwsquare.png') no-repeat center center;
+  overflow: hidden;
 }
 .project .mask,
 .project .content {
-  width: 100%;
-  height: 19rem;
   position: absolute;
-  overflow: hidden;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 19rem;
+  overflow: hidden;
 }
 .project img {
-  height: 19rem;
   display: block;
+  height: 19rem;
 }
 .project h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
   position: relative;
+  margin: 1rem 0 0 0;
   padding: 0.5rem;
   background: rgba(0, 0, 0, 0.8);
-  margin: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(---light);
 }
 .project p {
-  font-style: italic;
   position: relative;
-  color: #fff;
-  padding: 0.5rem;
+  padding: 0.2rem;
   text-align: center;
+  font-style: italic;
+  font-size: 0.7rem;
+  color: var(---light);
 }
 .project a.info {
   display: inline-block;
-  text-decoration: none;
   padding: 0.5rem 1rem;
   background: var(---light);
   text-transform: uppercase;
+  color: var(---basedark);
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.2s ease-in-out, color 0.1s ease-in;
 }
-
+.project a.info:hover {
+  background-color: var(---baselight);
+  color: var(---light);
+}
 .project img {
   transition: all 0.2s linear;
 }
 .project .mask {
+  background-color: #000000ad;
   opacity: 0;
-  background-color: #155b958b;
   transition: all 0.4s ease-in-out;
 }
 .project h2 {
@@ -74,10 +82,7 @@
   opacity: 0;
   transition: all 0.2s linear;
 }
-.project a.info {
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
+
 .project:hover img {
   transform: scale(1.1);
 }
@@ -87,8 +92,8 @@
 .project:hover h2,
 .project:hover p,
 .project:hover a.info {
-  opacity: 1;
   transform: translateY(0);
+  opacity: 1;
 }
 .project:hover p {
   transition-delay: 0.2s;
