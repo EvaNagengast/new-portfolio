@@ -7,7 +7,7 @@ function Projects() {
     <div className={styles.projects}>
       <h1>Projects</h1>
       <p className={styles.projectsIntro}>
-        Browse through some assorted projects I created by clicking the images.
+        Browse through some assorted projects I am working on by clicking the images.
       </p>
       <p className={styles.projectsIntro}>
         <a
