@@ -1,75 +1,98 @@
 .showProjects {
-  width: 200px;
-  height: max-content;
+  height: 25rem;
 }
-.box {
-  z-index: 90;
+.container {
+  width: fit-content;
+  margin: 0 auto;
 }
-.box2 {
-  top: -20rem;
-  left: 10rem;
-  margin-bottom: -20rem;
-  z-index: 80;
-}
-.box3 {
-  top: -20rem;
-  left: 20rem;
-  margin-bottom: -20rem;
-  z-index: 70;
-}
-.box4 {
-  top: -20rem;
-  left: 30rem;
-  margin-bottom: -20rem;
-  z-index: 60;
-}
-.box,
-.box2,
-.box3,
-.box4 {
+.project {
+  max-width: 19rem;
+  width: calc(25% - 40px);
+  height: 19rem;
+  margin: 0.6rem;
+  float: left;
+  border: 0.6rem solid var(---baselight);
+  overflow: hidden;
   position: relative;
-  padding-left: 10rem;
-  display: grid;
-  grid-template-columns: auto auto;
-  width: 50rem;
-  border-radius: 10rem;
-  height: 20rem;
+  text-align: center;
+  box-shadow: 1px 1px 2px #2f0a0a;
+  cursor: default;
+  background: #fff url('../media/trwsquare.png') no-repeat center center;
 }
-.boxClosed,
-.boxClosed2,
-.boxClosed3,
-.boxClosed4 {
-  left: -300%;
-  transition: all 1s ease-in-out;
-  background: none;
-  color: transparent;
+.project .mask,
+.project .content {
+  width: 100%;
+  height: 19rem;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
-.boxClosed {
-  left: -300%;
+.project img {
+  height: 19rem;
+  display: block;
 }
-.boxClosed2 {
-  left: -200%;
+.project h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 1rem 0 0 0;
 }
-.boxClosed3 {
-  left: -100%;
+.project p {
+  font-style: italic;
+  position: relative;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
 }
-.boxClosed4 {
-  left: -0%;
-}
-.boxOpen,
-.boxOpen2,
-.boxOpen3,
-.boxOpen4 {
-  left: 90%;
-  background-color: var(---basedark);
-  color: var(---light);
-  transition: all 1s ease-in-out;
-  z-index: 100;
+.project a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: var(---light);
+  text-transform: uppercase;
 }
 
-.projectImage {
-  height: 20rem;
-  border-radius: 50%;
-  outline: 5px solid var(---baselight);
-  outline-offset: -0.2rem;
+.project img {
+  transition: all 0.2s linear;
+}
+.project .mask {
+  opacity: 0;
+  background-color: #155b958b;
+  transition: all 0.4s ease-in-out;
+}
+.project h2 {
+  transform: translateY(-6rem);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.project p {
+  transform: translateY(0);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.project a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.project:hover img {
+  transform: scale(1.1);
+}
+.project:hover .mask {
+  opacity: 1;
+}
+.project:hover h2,
+.project:hover p,
+.project:hover a.info {
+  opacity: 1;
+  transform: translateY(0);
+}
+.project:hover p {
+  transition-delay: 0.2s;
+}
+.project:hover a.info {
+  transition-delay: 0.2s;
 }
