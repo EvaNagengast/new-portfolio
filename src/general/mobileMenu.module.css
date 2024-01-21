@@ -14,7 +14,7 @@
   height: 0.25rem;
   margin: 0.3rem;
   border-radius: 2px;
-  background-color: var(---basedark);
+  background-color: var(---baselight);
   transition: all 0.4s linear;
   transform-origin: 1px;
   z-index: 20;
@@ -24,6 +24,7 @@
 
 .mobileMenuTopOpen {
   transform: rotate(46deg);
+  
 }
 
 .mobileMenuMidOpen {
@@ -59,7 +60,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: var(---basedark);
+  color: var(---light);
   transition: color 0.3s ease-in-out;
 }
 
@@ -71,7 +72,7 @@
   width: 35%;
   padding: 5rem 1rem 2.5rem 1rem;
   border-radius: 0 2px 2px 0;
-  background-color: var(---baselight);
+  background-color: var(---basedark);
 }
 
 .mobileMenu .mobileNav {
@@ -90,5 +91,5 @@
 }
 
 .mobileMenu .active {
-  color: var(---light);
+  color: var(---baselight);
 }

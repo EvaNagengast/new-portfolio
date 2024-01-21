@@ -12,7 +12,7 @@
 
 .menu a {
   text-decoration: none;
-  color: var(---basedark);
+  color: var(---baselight);
   font-weight: bold;
   font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
@@ -23,5 +23,5 @@
 }
 
 .active {
-  color: var(---baselight) !important;
+  color: var(---basedark) !important;
 }

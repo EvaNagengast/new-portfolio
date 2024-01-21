@@ -1,9 +1,16 @@
 .navigation {
-  position: relative;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  box-shadow: 2px 2px 8px #0000000f;
+background: var(---light);
+  background-image: linear-gradient(var(---lightdark) 1px, transparent 0),
+    linear-gradient(90deg, var(---lightdark) 1px, transparent 0);
+  background-size: 20px 20px;
+  background-position: 0 0;
   z-index: 5;
 }
 
