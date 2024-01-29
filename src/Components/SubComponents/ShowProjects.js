@@ -1,12 +1,20 @@
 // import React, {useState} from 'react';
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import styles from './showProjects.module.css';
-import projectImage1 from '../media/trwsquare.png';
-import projectImage2 from '../media/jcsquare.png';
-import projectImage3 from '../media/101square.png';
-import projectImage4 from '../media/lmjsquare.png';
+import projectImage1 from '../../media/trwsquare.png';
+import projectImage2 from '../../media/jcsquare.png';
+import projectImage3 from '../../media/101Screenshot.png';
+import projectImage4 from '../../media/lmjsquare.png';
 
 function ShowProjects() {
+  const showProjectsRef = useRef(null);
+
+  useEffect(() => {
+    if (showProjectsRef.current) {
+      const contentHeight = showProjectsRef.current.scrollHeight;
+      showProjectsRef.current.style.height = `${contentHeight + 50}px`;
+    }
+  }, []);
   return (
     <div className={styles.showProjects}>
       <div className={styles.container}>
@@ -19,13 +27,14 @@ function ShowProjects() {
             <h2> Tech Risers Women</h2>
             <p>
               Tech Risers Women is an intiatve to support women in tech. I
-              received the basic information, colour-scheme and pillars and
+              received colour-scheme and pillars, and
               designed the website to showcase the mission and vision of tech
               risers women. For the design I chose to use images of some of the
-              most important women in tech to show how important women are in
-              this field.
+              most important women in tech.
             </p>
-            <p>Built with HTML, CSS, JavaScript, React</p>
+            <p className={styles.built}>
+              Built with HTML, CSS, JavaScript, React
+            </p>
             <a
               href='/'
               className={styles.info}>
@@ -33,6 +42,8 @@ function ShowProjects() {
             </a>
           </div>
         </div>
+      </div>
+      <div className={styles.container}>
         <div className={styles.project}>
           <img
             src={projectImage2}
@@ -41,13 +52,13 @@ function ShowProjects() {
           <div className={styles.mask}>
             <h2>Jane Corry Website</h2>
             <p>
-              This Website was built to showcase the newest work of the author
-              Jane Corry and to offer a unique glimpse into the author's world.
+              This website was custom built to showcase the newest work of the author
+              Jane Corry.
               To catch the eye of the user, the landing page shows a gloomy
               scene with animated flashing windows. The website also features a
               dynamic slideshow and a typewriter animation.
             </p>
-            <p>
+            <p className={styles.built}>
               Built with HTML, CSS, JavaScript, React, Embeds, Bootstrap, npm
               Libraries
             </p>
@@ -58,6 +69,8 @@ function ShowProjects() {
             </a>
           </div>
         </div>
+      </div>
+      <div className={styles.container}>
         <div className={styles.project}>
           <img
             src={projectImage3}
@@ -65,8 +78,14 @@ function ShowProjects() {
           />
           <div className={styles.mask}>
             <h2>101 Part Time Jobs</h2>
-            <p>I am part of the constant upkeep of this Music Podcast Website. My latest contributions were to create a responsive "about page" to tell the user more about the host of the show. I also designed a custom audio player and supported the work on the pagination feature. </p>
             <p>
+              I am part of the constant upkeep of this Music Podcast Website. My
+              latest contributions were to create a responsive "about page" to
+              tell the user more about the host of the show. I also designed a
+              custom audio player and supported the work on the pagination
+              feature.
+            </p>
+            <p className={styles.built}>
               Built with HTML, CSS, JavaScript, React, Next
             </p>
             <a
@@ -76,6 +95,8 @@ function ShowProjects() {
             </a>
           </div>
         </div>
+      </div>
+      <div className={styles.container}>
         <div className={styles.project}>
           <img
             src={projectImage4}
@@ -89,7 +110,9 @@ function ShowProjects() {
               Underground-themed icons to enhance the user experience and to
               spawn a connection with this beautiful city.
             </p>
-            <p>Built with HTML, CSS, JavaScript, Embeds & Bootstrap</p>
+            <p className={styles.built}>
+              Built with HTML, CSS, JavaScript, Embeds & Bootstrap
+            </p>
             <a
               href='/'
               className={styles.info}>

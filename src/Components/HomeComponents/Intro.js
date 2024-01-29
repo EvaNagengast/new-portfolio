@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './intro.module.css';
 import profileImage from '../../media/evaProfileImage.png';
-import CodeSnippet from '../../SubComponents/CodeSnippet';
+import CodeSnippet from '../SubComponents/CodeSnippet';
 function Intro() {
   return (
     <div className={styles.intro}>
@@ -9,7 +9,7 @@ function Intro() {
         <img
           src={profileImage}
           className={styles.profileImage}
-          alt="Eva Nagengast Profile"
+          alt='Eva Nagengast Profile'
         />
       </div>
 

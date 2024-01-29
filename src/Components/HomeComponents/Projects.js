@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from './projects.module.css';
-import ShowProjects from '../../SubComponents/ShowProjects';
+import ShowProjects from '../SubComponents/ShowProjects';
 
 function Projects() {
   return (
     <div className={styles.projects}>
       <h1>Projects</h1>
       <p className={styles.projectsIntro}>
-        Browse through some assorted projects I am working on by clicking the images.
+        Browse through some assorted projects I am working on by clicking the
+        images.
       </p>
       <p className={styles.projectsIntro}>
         <a
