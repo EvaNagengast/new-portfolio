@@ -22,28 +22,12 @@
   text-transform: uppercase;
   letter-spacing: 1.2px;
   color: var(---baselight);
-
+  transition: all 0.3s ease-in-out;
 }
 .contactsection a:visited {
-   color: var(---baselight);
+  color: var(---baselight);
 }
 .contactsection a:hover {
   background-color: var(---baselight);
   color: var(---light);
 }
-/* @media (max-width: 576px) {
-  .contactsection h4 {
-    font-size: 60px;
-  }
-  .contactsection button {
-    font-size: 16px;
-  }
-}
-@media (max-width: 420px) {
-  .contactsection h4 {
-    font-size: 44px;
-  }
-  .contactsection button {
-    font-size: 12px;
-  }
-} */

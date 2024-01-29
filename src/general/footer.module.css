@@ -1,0 +1,14 @@
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(---baselight);
+}
+
+footer a {
+  color: var(---light);
+  transition: all 0.2s ease-in-out;
+}
+footer p {margin: 1rem}
+footer a:hover {
+  color: var(---basedark);
+}
