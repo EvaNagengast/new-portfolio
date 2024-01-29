@@ -4,11 +4,12 @@
   justify-content: center;
   gap: 0.3rem;
   margin: 2rem auto;
+  padding: 0 14% 1rem 14%;
 }
 
 .container {
-  flex: 0 0 24%;
-  max-width: 24%;
+  flex-basis: 48%;
+    max-width: 48%;
 }
 
 .project {
@@ -55,8 +56,9 @@
 .project p {
   position: relative;
   padding: 0.2rem;
+  line-height: 1.5;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(---light);
   transform: translateY(0);
   opacity: 0;
@@ -108,11 +110,4 @@
   transition-delay: 0.2s;
 }
 
-@media (max-width: 1200px) {
-  .showProjects {padding: 0 10rem 1rem 10rem;}
-  .container {
-    flex-basis: 48%;
-    max-width: 48%;
-  }
 
-}

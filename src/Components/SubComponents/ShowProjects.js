@@ -1,5 +1,5 @@
 // import React, {useState} from 'react';
-import React, {useRef, useEffect} from 'react';
+
 import styles from './showProjects.module.css';
 import projectImage1 from '../../media/trwsquare.png';
 import projectImage2 from '../../media/jcsquare.png';
@@ -7,14 +7,6 @@ import projectImage3 from '../../media/101Screenshot.png';
 import projectImage4 from '../../media/lmjsquare.png';
 
 function ShowProjects() {
-  const showProjectsRef = useRef(null);
-
-  useEffect(() => {
-    if (showProjectsRef.current) {
-      const contentHeight = showProjectsRef.current.scrollHeight;
-      showProjectsRef.current.style.height = `${contentHeight + 50}px`;
-    }
-  }, []);
   return (
     <div className={styles.showProjects}>
       <div className={styles.container}>
@@ -27,10 +19,10 @@ function ShowProjects() {
             <h2> Tech Risers Women</h2>
             <p>
               Tech Risers Women is an intiatve to support women in tech. I
-              received colour-scheme and pillars, and
-              designed the website to showcase the mission and vision of tech
-              risers women. For the design I chose to use images of some of the
-              most important women in tech.
+              received colour-scheme and pillars, and designed the website to
+              showcase the mission and vision of tech risers women. For the
+              design I chose to use images of some of the most important women
+              in tech.
             </p>
             <p className={styles.built}>
               Built with HTML, CSS, JavaScript, React
@@ -52,11 +44,10 @@ function ShowProjects() {
           <div className={styles.mask}>
             <h2>Jane Corry Website</h2>
             <p>
-              This website was custom built to showcase the newest work of the author
-              Jane Corry.
-              To catch the eye of the user, the landing page shows a gloomy
-              scene with animated flashing windows. The website also features a
-              dynamic slideshow and a typewriter animation.
+              This website was custom built to showcase the newest work of the
+              author Jane Corry. To catch the eye of the user, the landing page
+              shows a gloomy scene with animated flashing windows. The website
+              also features a dynamic slideshow and a typewriter animation.
             </p>
             <p className={styles.built}>
               Built with HTML, CSS, JavaScript, React, Embeds, Bootstrap, npm
