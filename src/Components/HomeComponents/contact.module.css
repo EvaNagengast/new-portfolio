@@ -1,0 +1,49 @@
+.contactsectionbox {
+  margin: 1rem;
+  border: 8px solid var(---baselight);
+  background-color: var(---light);
+  text-align: center;
+}
+.contactsection h4 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(---baselight);
+}
+.contactsection a {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto 1.5rem;
+  border: 2px solid var(---baselight);
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 2px 2px 2px 1px #752b2b25;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(---baselight);
+
+}
+.contactsection a:visited {
+   color: var(---baselight);
+}
+.contactsection a:hover {
+  background-color: var(---baselight);
+  color: var(---light);
+}
+/* @media (max-width: 576px) {
+  .contactsection h4 {
+    font-size: 60px;
+  }
+  .contactsection button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 420px) {
+  .contactsection h4 {
+    font-size: 44px;
+  }
+  .contactsection button {
+    font-size: 12px;
+  }
+} */
