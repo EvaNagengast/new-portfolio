@@ -1,10 +1,11 @@
 .projects {
-  margin: 0 1rem;
+  margin: 1rem;
+  padding: 3rem 0 2rem;
   background-color: var(---basedark);
 }
 
 .projects h1 {
-  margin: 0 1rem;
+  margin: 1rem;
   text-align: center;
   font-size: 5.5rem;
   font-weight: 900;
@@ -12,6 +13,7 @@
   letter-spacing: -2.5px;
 }
 .projects p {
+  padding-top: 1rem ;
   color: var(---light);
 }
 .projects a {
