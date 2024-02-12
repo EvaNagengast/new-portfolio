@@ -11,7 +11,6 @@
   background-color: var(---baselight);
   padding: 0.5rem 0.8rem 0.5rem 0.6rem;
   border-bottom: 2px solid black;
-
   color: var(---light);
 }
 .window {
@@ -45,7 +44,7 @@
 .window a {
   color: var(---basedark);
 }
-.button {
+.window .button {
   display: block;
   width: fit-content;
   margin: 1.5rem auto 1rem;
@@ -53,6 +52,7 @@
   border: 3px outset #5994c5;
   background-color: var(---lightdark);
 }
-.button:hover {
+.window .button:hover {
   background-color: #99c6ea;
+  color: var(---light);
 }

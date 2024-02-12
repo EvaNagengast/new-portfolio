@@ -6,7 +6,7 @@ function Footer() {
     <div className={styles.footer}>
       <footer>
         <p>
-          This page was crafted with care and built using React.js. It is{' '}
+          This page was crafted with care and built using React. It is{' '}
           <a
             href='https://github.com/EvaNagengast'
             target='_blank'
