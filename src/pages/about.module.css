@@ -1,0 +1,146 @@
+.about {
+  padding: 1rem 2rem 3rem 2rem;
+  margin: 2rem auto;
+}
+.about h1 {
+  text-align: left;
+  font-size: 7.5rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  color: var(---basedark);
+  letter-spacing: -4px;
+}
+.about main {
+  padding: 2rem;
+}
+.about .aboutInfo {
+  padding: 1.5rem 2rem;
+  box-shadow: 2px 1px 5px 1px #4e59612f;
+  background-color: var(---light);
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.about .aboutImage {
+  float: right;
+  margin: -1.5rem -2rem 1rem 0.5rem;
+  box-shadow: 2px 2px 5px 1px #4e59612f;
+  max-width: 30%;
+}
+.aboutImage img {
+  filter: sepia(0.2);
+  max-width: 100%;
+  height: auto;
+}
+.about figcaption {
+  padding: 0.3rem;
+  background-color: var(---basedark);
+  text-wrap: wrap;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: var(---light);
+  letter-spacing: 1.5px;
+}
+.about a {
+  display: inline-block;
+  margin: 1rem ;
+  padding: 0.8rem 1.3rem;
+
+  box-shadow: 2px 1px 5px 1px #4e59612f;
+  font-size: 16px;
+  border: 1px solid var(---basedark);
+  background-color: var(---base);
+  color: var(---basedark);
+  border-radius: 10px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  /* px-3 py-1 ms-1 me-3 mx-sm-3 mb-4 mt-2 */
+}
+.about a:hover {
+  background-color: var(---basedark);
+  color: var(---base);
+}
+
+/*  
+@media (max-width: 1023px) {
+  .about h1 {
+    font-size: 110px;
+  }
+  .about img,
+  .about figcaption {
+    max-width: 270px;
+  }
+
+  .about .aboutInfo {
+    margin: 30px 80px 50px 80px;
+  }
+}
+@media (max-width: 960px) {
+  .about h1 {
+    margin-bottom: 20px;
+  }
+  .about .aboutInfo {
+    margin: 15px 70px 50px 70px;
+  }
+}
+@media (max-width: 768px) {
+  .about h1 {
+    font-size: 90px;
+    letter-spacing: -6px;
+  }
+  .about img,
+  .about figcaption {
+    max-width: 180px;
+  }
+  .about button {
+    font-size: 14px;
+  }
+  .about .aboutInfo {
+    margin: 5px 70px 40px 70px;
+  }
+  .about figcaption {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 576px) {
+  .about h1 {
+    font-size: 65px;
+    letter-spacing: -3px;
+  }
+  .about img,
+  .about figcaption {
+    max-width: 140px;
+  }
+  .about button {
+    font-size: 13px;
+  }
+  .about .aboutInfo {
+    margin: 5px 50px 30px 50px;
+  }
+}
+@media (max-width: 480px) {
+  .about .aboutInfo {
+    margin: 5px 20px 30px 20px;
+    font-size: 14px;
+  }
+  .about .aboutImage {
+    float: right;
+    margin: -15px -17px 10px 2px;
+  }
+  .about h1 {
+    font-size: 60px;
+    letter-spacing: -2px;
+  }
+  .about button {
+    font-size: 11px;
+  }
+}
+@media (max-width: 380px) {
+  .about h1 {
+    font-size: 55px;
+  }
+}
+*/

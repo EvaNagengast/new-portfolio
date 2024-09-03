@@ -1,6 +1,5 @@
 .hero {
   text-align: center;
-
   padding: 2rem 2rem 3rem 2rem;
 }
 
@@ -29,13 +28,13 @@
 /* buttons */
 .heroButton {
   display: inline-block;
-  margin: 1rem 1rem;
+  margin: 1rem;
   padding: 0.8rem 1.3rem;
   box-shadow: 2px 1px 5px 1px #0c49762f;
   border: 1px solid var(---lightdark);
   border-radius: 4px;
   background-color: var(---light);
-  font-weight: 00;
+  font-weight: 100;
   font-size: 1rem;
   color: var(---basedark);
   letter-spacing: 2px;
